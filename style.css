@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.background {
+  background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-colorful-people-silhouette-sports-meeting-template-poster-background-material-picture-image_1047807.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.332);
+  height: 100vh;
+  width: 100%;
+}
+
+.text h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  letter-spacing: 3px;
+}
+
+h1,
+span {
+  font-family: 'Cormorant', serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  color: rgb(126, 5, 96);
+  text-shadow: 1px 1px 1px white;
+}
+
+.stopwatch {
+  padding: 20px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: rgb(8, 4, 115);
+}
+
+.timerDisplay {
+  font-size: 70px;
+  font-weight: 600;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-inline: 12px;
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 21px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 185px;
+  content: "";
+  height: 60%;
+  left: 2.7px;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 95%;
+}
+
+.btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+  h1,
+  span {
+    font-size: 43px;
+    margin: 0;
+  }
+  .stopwatch {
+    padding: 20px 24px;
+    color: rgb(105, 3, 85);
+  }
+
+  .timerDisplay {
+    font-size: 60px;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 16px 30px;
+    margin-inline: 12px;
+  }
+  .btn:before {
+    left: 2.7px;
+    width: 95%;
+  }
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+}
+
+
+
+
+@media (max-width:500px) {
+
+  h1,
+  span {
+    font-size: 25px;
+    margin: 0;
+  }
+  .stopwatch {
+    padding: 10px 14px;
+    color: rgb(105, 3, 85);
+  }
+
+  .timerDisplay {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 10px 22px;
+    margin-inline: 7px;
+  }
+  .btn:before {
+    left: 5px;
+    width: 88%;
+  }
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+}
